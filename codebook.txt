@@ -1,0 +1,25 @@
+This is the codebook. 
+
+In this script the reading in of the data can be confusing
+when using file.choose() The object assightments :
+features receives features.txt
+activities '' activity_labels.txt
+tr.sub '' subject_train.txt
+tr.x '' x_train.txt
+tr.y '' y_train.txt
+ts.sub ''subject_test.txt
+ts.x '' x_test.txt
+ts.y '' y_test.txt 
+ 
+The variables were extracted based on mean() and std() being in the title of the variable/feature. I chose to use escape characters to exclude Freqmean 
+as it did not seem to be appropriate for the analysis. It is more of a measurement of distribution than average.  
+
+When clarifying the final variable/feature, I made the following substitutions in a text editor, as opposed to within R. I chose to do this 
+in a text editor so that I could carefully read the names and not make any mistakes. 
+tBody<-TotalBody, 
+Acc<-Acceleration,
+Mag<-Magnitude,
+fBody<-FourierTransformed, 
+#Gyro<-_Gyroscope
+I referred to the original codebook, which is available here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
